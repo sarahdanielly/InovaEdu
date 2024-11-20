@@ -1,0 +1,263 @@
+
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #FFFFFF;
+    color: #5c4b51;
+    line-height: 1.6;
+    transition: font-size 0.3s; 
+    font-size: 1em; 
+}
+/* Cabeçalho fixo*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    border-bottom: 2px solid #B51200;
+    z-index: 1000;
+}
+
+/* Ícone do menu */
+.menu-icon img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Logo */
+.logo-header img {
+    max-height: 60px;
+}
+
+/* Controle de acessibilidade */
+.accessibility-options {
+    display: flex;
+    gap: 10px;
+}
+
+.accessibility-options a {
+    color: #4B4B4B;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s
+}
+
+.accessibility-options a:hover {
+    color: #B51200;
+}
+
+/* Menu de navegação */
+
+/* Menu de navegação */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    margin-top: 60px;
+    background-color: #632423;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #4B4B4B;
+    border-radius: 4px;
+} 
+
+/* Banner página home */
+
+.banner {
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden; 
+}
+
+.banner-images {
+    display: flex; 
+    transition: transform 0.5s ease; 
+}
+
+.banner img {
+    width: 100%;
+    max-width: 1200px; 
+    display: none;
+}
+
+.banner img.active {
+    display: block; 
+}
+
+/* Seções */
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Ajustes para as seções de cursos */
+.curso {
+    display: inline-block;
+    width: 45%;
+    margin: 0 2.5%;
+    text-align: center;
+}
+
+.curso img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.curso p {
+    font-size: 1.2rem;
+    color: #5c4b51;
+}
+
+/* Estilos para as imagens*/
+.curso-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.curso {
+    flex-basis: 45%; 
+    text-align: center;
+    margin: 10px;
+}
+
+.curso img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para a transformação */
+}
+
+/* Efeito ao passar o mouse sobre as imagens */
+.curso img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+/* Rodapé */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Ajustes do layout e largura */
+main {
+    max-width: 1200px; 
+    margin: 0 auto;   
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+
+/* Estilos do formulário de contato */
+
+.container{
+    border-radius: 14px;
+    margin: 14px;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: 0 3px 5px rgba(0,0,0,00.5);
+}
+
+.container h2{
+    text-align: center;
+    color: #B51200;
+}
+
+.form{
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    max-width: 500px; /* Tamanho máximo do formulário */
+    margin: 20px auto; /* Centraliza o formulário */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #fff; /* Cor de fundo do formulário */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.form-content{
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+.form-content label{
+    display: inline;
+    margin-bottom: 4px;
+}
+
+.form-content input{
+    display: block;
+    width: 100%;
+    border-radius: 8px; 
+    padding: 8px;
+    border: 2px solid #B51200;
+}
+
+.form button{
+    background-color: #4B4B4B;
+    color: #FFFFFF;
+    width: 100%;
+    border-radius: 14px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 14px;
+    border: 0;
+    font-size: 18;
+}
